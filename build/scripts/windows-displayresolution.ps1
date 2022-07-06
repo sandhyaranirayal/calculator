@@ -9,4 +9,4 @@ Param
     $Height
 )
 
-.\setres.exe -w $Width -h $Height -f
+Start-Process -FilePath "$PSScriptRoot\setres.exe" -ArgumentList "-w $Width -h $Height -f" -Wait
